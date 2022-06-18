@@ -4,28 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainScreenActivity">
 
     <Button
-        android:id="@+id/user_btn"
-        android:layout_width="265dp"
-        android:layout_height="112dp"
-        android:layout_marginTop="180dp"
-        android:text="@string/user_btn"
+        android:id="@+id/set_address_btn"
+        android:layout_width="210dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/set_address_btn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/seller_btn"
-        android:layout_width="265dp"
-        android:layout_height="112dp"
-        android:layout_marginTop="120dp"
-        android:text="@string/seller_btn"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pack_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_btn"
-        app:layout_constraintVertical_bias="0.121" />
-
+        app:layout_constraintTop_toBottomOf="@+id/set_address_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
