@@ -17,5 +17,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, MainScreenActivity::class.java)
             startActivity(intent)
         }
+
+        seller_btn.setOnClickListener {
+            val intent = Intent(this, ChooseSeller::class.java)
+            startActivity(intent)
+        }
     }
 }
