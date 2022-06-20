@@ -37,6 +37,7 @@ class MapsFragment : Fragment() {
 
         val aveiro = LatLng(40.640, -8.65)
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(aveiro))
+        googleMap.moveCamera(CameraUpdateFactory.zoomTo(12.0f))
     }
 
 
