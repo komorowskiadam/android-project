@@ -26,4 +26,14 @@
             android:text="0000000000" />
     </LinearLayout>
 
+    <View android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="0dp"/>
+
+    <Button
+        android:id="@+id/pack_details_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="8dp"
+        android:text="@string/pack_details_btn_text" />
+
 </LinearLayout>

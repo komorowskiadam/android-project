@@ -10,8 +10,12 @@
         <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/fragment_date_picker.xml" value="0.18512820512820513" />
         <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/fragment_maps.xml" value="0.29583333333333334" />
         <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/fragment_time_picker.xml" value="0.18802083333333333" />
+        <entry key="app/src/main/res/layout/activity_add_package.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main_screen.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_pack_details.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/content_add_package.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.33" />
         <entry key="app/src/main/res/layout/pack_item_view.xml" value="0.33" />
       </map>
     </option>
