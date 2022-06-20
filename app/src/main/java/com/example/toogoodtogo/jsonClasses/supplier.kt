@@ -1,4 +1,4 @@
-package com.example.toogoodtogo
+package com.example.toogoodtogo.jsonClasses
 
 import com.google.gson.annotations.SerializedName
 

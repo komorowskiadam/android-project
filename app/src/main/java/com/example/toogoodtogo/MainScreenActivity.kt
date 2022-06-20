@@ -42,7 +42,9 @@ class MainScreenActivity : AppCompatActivity() {
         button = findViewById<View>(R.id.set_address_btn) as Button
 
         button!!.setOnClickListener {
+            button!!.visibility = View.GONE
             openMapFragment()
+
         }
 
         packs.add(pack1)
