@@ -8,6 +8,7 @@ import android.os.StrictMode.ThreadPolicy
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.toogoodtogo.jsonClasses.Supplier
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.BufferedReader
