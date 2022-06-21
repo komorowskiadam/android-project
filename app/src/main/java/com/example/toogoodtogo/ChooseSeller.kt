@@ -33,21 +33,21 @@ class ChooseSeller : AppCompatActivity() {
 
         b0!!.setOnClickListener {
             val intent = Intent(this, AddPackage::class.java)
-            b.putInt("id", 0)
+            b.putString("id", "0")
             intent.putExtras(b)
             startActivity(intent)
         }
 
         b1!!.setOnClickListener {
             val intent = Intent(this, AddPackage::class.java)
-            b.putInt("id", 1)
+            b.putString("id", "1")
             intent.putExtras(b)
             startActivity(intent)
         }
 
         b2!!.setOnClickListener {
             val intent = Intent(this, AddPackage::class.java)
-            b.putInt("id", 2)
+            b.putString("id", "2")
             intent.putExtras(b)
             startActivity(intent)
         }

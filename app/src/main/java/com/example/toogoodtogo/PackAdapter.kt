@@ -1,5 +1,6 @@
 package com.example.toogoodtogo
 
+import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -7,8 +8,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.toogoodtogo.jsonClasses.User
 
-class PackAdapter(val packs: List<Pack>): RecyclerView.Adapter<PackAdapter.PackViewHolder>() {
+class PackAdapter(private val packs: List<Pack>): RecyclerView.Adapter<PackAdapter.PackViewHolder>() {
 
     companion object {
         const val EXTRA_PACK_NAME = "pt.ua.tooGoodToGo.PACK_NAME"
@@ -46,7 +48,7 @@ class PackAdapter(val packs: List<Pack>): RecyclerView.Adapter<PackAdapter.PackV
         var packName: TextView = itemView.findViewById<TextView>(R.id.packName)
         var packPrice: TextView = itemView.findViewById<TextView>(R.id.packPrice)
         val packDetailsBtn = itemView.findViewById<Button>(R.id.pack_details_btn)
-        val context = itemView.context
+        val context: Context = itemView.context
     }
 
 }

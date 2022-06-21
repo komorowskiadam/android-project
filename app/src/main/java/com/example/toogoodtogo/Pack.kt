@@ -16,7 +16,7 @@ data class Pack(
     @SerializedName("supplier")
     val supplier: String,
     @SerializedName("date_start")
-    val date_start: Int,
+    val date_start: String,
     @SerializedName("date_end")
-    val date_end: Int
+    val date_end: String
 )

@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         val seller_btn = findViewById<Button>(R.id.seller_btn)
 
         user_btn.setOnClickListener {
-            val intent = Intent(this, MainScreenActivity::class.java)
+            val intent = Intent(this, ChooseUserActivity::class.java)
             startActivity(intent)
         }
 

@@ -17,6 +17,12 @@
         android:theme="@style/Theme.TooGoodToGo"
         tools:targetApi="31">
         <activity
+            android:name=".UserPacksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseUserActivity"
+            android:exported="false" />
+        <activity
             android:name=".PackDetailsActivity"
             android:exported="false" />
 
