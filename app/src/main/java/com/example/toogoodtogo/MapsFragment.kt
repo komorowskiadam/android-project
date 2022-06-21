@@ -1,5 +1,6 @@
 package com.example.toogoodtogo
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +15,20 @@ import com.google.android.gms.maps.model.MarkerOptions
 
 class MapsFragment : Fragment() {
 
+    var lat = ""
+    var lng = ""
+
+    lateinit var dataPasser: OnDataPass
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        dataPasser = context as OnDataPass
+    }
+
+    private fun passData(){
+        dataPasser.onDataPass("$lat-$lng")
+    }
+
     private val callback = OnMapReadyCallback { googleMap ->
         googleMap.setOnMapClickListener { latLng -> // Creating a marker
             val markerOptions = MarkerOptions()
@@ -24,6 +39,9 @@ class MapsFragment : Fragment() {
             // Setting the title for the marker.
             // This will be displayed on taping the marker
             markerOptions.title(latLng.latitude.toString() + " : " + latLng.longitude)
+
+            lat = latLng.latitude.toString()
+            lng = latLng.longitude.toString()
 
             // Clears the previously touched position
             googleMap.clear()
@@ -53,4 +71,11 @@ class MapsFragment : Fragment() {
         val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
         mapFragment?.getMapAsync(callback)
     }
+
+
+    override fun onDestroy() {
+        super.onDestroy()
+        passData()
+    }
+
 }

@@ -4,7 +4,6 @@ plugins {
     id 'kotlin-android-extensions'
     id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
-apply plugin: 'kotlin-android'
 
 android {
     compileSdk 32

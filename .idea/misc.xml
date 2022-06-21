@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/activity_add_package.xml" value="0.25" />
+        <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/activity_add_package.xml" value="0.22" />
         <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/activity_choose_seller.xml" value="0.2" />
+        <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/activity_main.xml" value="0.2833333333333333" />
         <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/activity_main_screen.xml" value="0.29583333333333334" />
         <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/fragment_add_package.xml" value="0.25" />
         <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/fragment_date_picker.xml" value="0.18512820512820513" />

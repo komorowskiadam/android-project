@@ -35,6 +35,13 @@ class MainScreenActivity : AppCompatActivity() {
         transaction.commit()
     }
 
+    fun onDataPass(data: String) {
+        TODO()
+        // data tutaj to lat i lng
+        // format - "$lat-$lng"
+        // jak wysylasz request to /packages_coords/"$lat-$lng"/threshold
+        // jesli zero
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_screen)
