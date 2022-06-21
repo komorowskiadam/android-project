@@ -17,6 +17,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main_screen.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_pack_details.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_user_packs.xml" value="0.33" />
         <entry key="app/src/main/res/layout/content_add_package.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.33" />
         <entry key="app/src/main/res/layout/pack_item_view.xml" value="0.33" />

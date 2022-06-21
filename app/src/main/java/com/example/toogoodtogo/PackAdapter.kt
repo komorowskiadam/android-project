@@ -10,13 +10,18 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.toogoodtogo.jsonClasses.User
 
-class PackAdapter(private val packs: List<Pack>): RecyclerView.Adapter<PackAdapter.PackViewHolder>() {
+class PackAdapter(private val packs: List<Pack>,
+                  private val isReserved: Boolean,
+                  private val userId: String?): RecyclerView.Adapter<PackAdapter.PackViewHolder>() {
 
     companion object {
         const val EXTRA_PACK_NAME = "pt.ua.tooGoodToGo.PACK_NAME"
         const val EXTRA_PRICE = "pt.ua.tooGoodToGo.PRICE"
         const val EXTRA_TIME = "pt.ua.tooGoodToGo.TIME"
         const val EXTRA_DESC = "pt.ua.tooGoodToGo.DESC"
+        const val EXTRA_IS_RESERVED = "pt.ua.tooGoodToGo.RESERVED"
+        const val EXTRA_PACK_ID = "pt.ua.tooGoodToGo.PACK_ID"
+        const val EXTRA_USERS_ID = "pt.ua.tooGoodToGo.USERS_ID"
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PackViewHolder {
@@ -32,9 +37,13 @@ class PackAdapter(private val packs: List<Pack>): RecyclerView.Adapter<PackAdapt
             val intent = Intent(holder.context, PackDetailsActivity::class.java)
             intent.putExtra(EXTRA_PACK_NAME, packs[position].name)
             intent.putExtra(EXTRA_PRICE, "" + packs[position].price + "$")
+            intent.putExtra(EXTRA_IS_RESERVED, isReserved)
             val time = "" + packs[position].date_start + " : " + packs[position].date_end
             intent.putExtra(EXTRA_TIME, time)
             intent.putExtra(EXTRA_DESC, packs[position].desc)
+            intent.putExtra(EXTRA_PACK_ID, packs[position].id)
+            if(userId != null)
+                intent.putExtra(EXTRA_USERS_ID, userId)
             holder.context.startActivity(intent)
         }
     }

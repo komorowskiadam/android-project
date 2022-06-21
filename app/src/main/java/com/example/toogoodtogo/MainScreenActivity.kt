@@ -1,5 +1,6 @@
 package com.example.toogoodtogo
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.os.StrictMode
@@ -17,7 +18,6 @@ import java.net.URL
 
 
 class MainScreenActivity : AppCompatActivity(), OnDataPass {
-
     private var button: Button? = null
 
     private var packs = mutableListOf<Pack>()
@@ -59,7 +59,6 @@ class MainScreenActivity : AppCompatActivity(), OnDataPass {
     }
 
     override fun onDataPass(data: String) {
-        TODO()
         // data tutaj to lat i lng
         // format - "$lat-$lng"
         // jak wysylasz request to /packages_coords/"$lat-$lng"/threshold
@@ -69,7 +68,15 @@ class MainScreenActivity : AppCompatActivity(), OnDataPass {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_screen)
 
-        val
+        intent = intent
+        userId = intent.getStringExtra(UserAdapter.EXTRA_USER_ID).toString()
+
+        val userPacksButton = findViewById<Button>(R.id.users_packs_btn)
+        userPacksButton.setOnClickListener {
+            val userPacksIntent = Intent(this, UserPacksActivity::class.java)
+            userPacksIntent.putExtra(UserAdapter.EXTRA_USER_ID, userId)
+            startActivity(userPacksIntent)
+        }
 
         button = findViewById<View>(R.id.set_address_btn) as Button
 
@@ -79,12 +86,9 @@ class MainScreenActivity : AppCompatActivity(), OnDataPass {
 
         }
 
-        intent = intent
-        userId = intent.getStringExtra(UserAdapter.EXTRA_USER_ID).toString()
-
         getPacks()
 
-        val adapter = PackAdapter(packs)
+        val adapter = PackAdapter(packs, false, null)
         val recyclerView = findViewById<RecyclerView>(R.id.pack_list)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
