@@ -39,7 +39,7 @@ class PackDetailsActivity : AppCompatActivity() {
 
         val reserveBtn = findViewById<Button>(R.id.packDetailsReserveBtn)
 
-        if(isReserved || userId == null){
+        if(isReserved){
             reserveBtn.visibility = View.GONE
         }
 
@@ -63,13 +63,6 @@ class PackDetailsActivity : AppCompatActivity() {
             conn.doOutput = true
             conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded")
             conn.useCaches = false
-
-            BufferedReader(InputStreamReader(conn.inputStream)).use { br ->
-                var line: String?
-                while (br.readLine().also { line = it } != null) {
-                    println(line)
-                }
-            }
         }
     }
 }

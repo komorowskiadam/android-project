@@ -11,8 +11,6 @@ data class Pack(
     val price: Double,
     @SerializedName("desc")
     val desc: String,
-    @SerializedName("taken")
-    val taken: Boolean,
     @SerializedName("supplier")
     val supplier: String,
     @SerializedName("date_start")

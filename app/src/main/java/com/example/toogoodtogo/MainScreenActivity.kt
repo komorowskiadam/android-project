@@ -88,7 +88,7 @@ class MainScreenActivity : AppCompatActivity(), OnDataPass {
 
         getPacks()
 
-        val adapter = PackAdapter(packs, false, null)
+        val adapter = PackAdapter(packs, false, userId)
         val recyclerView = findViewById<RecyclerView>(R.id.pack_list)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter

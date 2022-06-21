@@ -28,6 +28,8 @@ class UserPacksActivity : AppCompatActivity() {
 
         getPacksForUser(userId)
 
+        print(userId)
+
         val adapter = PackAdapter(packs, true, userId)
         val recyclerView = findViewById<RecyclerView>(R.id.user_pack_list)
         recyclerView.layoutManager = LinearLayoutManager(this)
