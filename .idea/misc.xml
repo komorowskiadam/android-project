@@ -6,12 +6,17 @@
         <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/drawable/ic_baseline_save_alt_24.xml" value="0.214" />
         <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/activity_add_package.xml" value="0.22" />
         <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/activity_choose_seller.xml" value="0.2" />
+        <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/activity_choose_user.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/activity_main.xml" value="0.2833333333333333" />
         <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/activity_main_screen.xml" value="0.29583333333333334" />
+        <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/activity_pack_details.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/activity_user_packs.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/fragment_add_package.xml" value="0.25" />
         <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/fragment_date_picker.xml" value="0.18512820512820513" />
         <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/fragment_maps.xml" value="0.29583333333333334" />
         <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/fragment_time_picker.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/pack_item_view.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/jerzy/AndroidStudioProjects/android-project/app/src/main/res/layout/user_select_button_layout.xml" value="0.21614583333333334" />
         <entry key="app/src/main/res/layout/activity_add_package.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_choose_seller.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_choose_user.xml" value="0.33" />

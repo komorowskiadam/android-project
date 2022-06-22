@@ -5,7 +5,8 @@
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainScreenActivity">
+    tools:context=".MainScreenActivity"
+    android:background="@drawable/background_add_package">
 
     <Button
         android:id="@+id/set_address_btn"
@@ -24,6 +25,8 @@
         android:layout_height="0dp"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#61CA9F9F"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,6 +49,8 @@
         android:layout_height="98dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
+        android:background="#80FFFFFF"
+        android:backgroundTint="#80E6D0D0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 

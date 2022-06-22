@@ -1,0 +1,1 @@
+To run the application the only requirement is working android device with API >= 22 and Internet connection.
