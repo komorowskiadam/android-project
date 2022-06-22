@@ -19,6 +19,7 @@ import java.net.URL
 
 class MainScreenActivity : AppCompatActivity(), OnDataPass {
     private var button: Button? = null
+    private var button1: Button? = null
 
     private var packs = mutableListOf<Pack>()
 
@@ -54,16 +55,25 @@ class MainScreenActivity : AppCompatActivity(), OnDataPass {
         val fragment = MapsFragment()
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.mainLayout, fragment)
-        transaction.disallowAddToBackStack()
+        transaction.addToBackStack(null)
         transaction.commit()
     }
 
     override fun onDataPass(data: String) {
+        println(data)
+        button = findViewById<View>(R.id.set_address_btn) as Button
+        button1 = findViewById<View>(R.id.users_packs_btn) as Button
+
+        button!!.visibility = View.VISIBLE
+
+        button1!!.visibility = View.VISIBLE
+
         // data tutaj to lat i lng
         // format - "$lat-$lng"
         // jak wysylasz request to /packages_coords/"$lat-$lng"/threshold
         // jesli zero
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_screen)
@@ -79,11 +89,12 @@ class MainScreenActivity : AppCompatActivity(), OnDataPass {
         }
 
         button = findViewById<View>(R.id.set_address_btn) as Button
+        button1 = findViewById<View>(R.id.users_packs_btn) as Button
 
         button!!.setOnClickListener {
             button!!.visibility = View.GONE
             openMapFragment()
-
+            button1!!.visibility = View.GONE
         }
 
         getPacks()
@@ -93,6 +104,5 @@ class MainScreenActivity : AppCompatActivity(), OnDataPass {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
     }
-
 
 }

@@ -5,4 +5,18 @@
     android:layout_height="match_parent"
     android:id="@+id/map"
     tools:context=".MapsFragment"
-    android:name="com.google.android.gms.maps.SupportMapFragment"/>
+    android:name="com.google.android.gms.maps.SupportMapFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="30dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_save_alt_24"
+        android:clickable="true"
+        android:onClick="save"
+        android:rotation="0" />
+
+</fragment>
