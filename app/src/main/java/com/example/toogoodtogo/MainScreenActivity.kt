@@ -31,7 +31,7 @@ class MainScreenActivity : AppCompatActivity(), OnDataPass {
     private lateinit var numberPicker: NumberPicker
 
     private fun getPacks(){
-        val url = URL("http://icm.dkkapusta1997.usermd.net/packages")
+        val url = URL("http://icm.dkkapusta1997.usermd.net/packages_avail/$userId")
         var fullstring = ""
 
         val sdkVersion = Build.VERSION.SDK_INT

@@ -31,7 +31,7 @@ class MapsFragment : Fragment() {
     }
 
     private fun passData(){
-        dataPasser.onDataPass("$lat-$lng")
+        dataPasser.onDataPass("$lat:$lng")
     }
 
     private val callback = OnMapReadyCallback { googleMap ->
